@@ -1,17 +1,5 @@
 $(document).ready(function() {
-    $(".stream1").on("click", function() {
-        $(".card_image").fadeIn(1000);
-   });
-   $("#stream2_btn").on("click", function() {
-        $(".stream1").removeClass('highlight_stream');
-        $(".stream2").removeClass('highlight_stream');
-        $(".stream3").removeClass('highlight_stream');
-        $(".stream2").addClass('highlight_stream');
-   });
-   $("#stream3_btn").on("click", function() {
-        $(".stream1").removeClass('highlight_stream');
-        $(".stream2").removeClass('highlight_stream');
-        $(".stream3").removeClass('highlight_stream');
-        $(".stream3").addClass('highlight_stream');
+    $("h2").click(function() {
+        $(".card_para").slideToggle(1000); 
    });
 }); 
